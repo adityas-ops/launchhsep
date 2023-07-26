@@ -7,11 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+     fontFamily:{
+      "Inter":['Inter', 'sans-serif'],
+      "HeadLand":['Headland One', 'serif']
+     },
+     backgroundImage:{
+      "hero": "url('/images/hero.png')",
+      "gradient-1":"linear-gradient(180deg, #BA92FD 0%, rgba(154, 101, 242, 0.00) 100%)"
+
+      }
     },
   },
   plugins: [],
