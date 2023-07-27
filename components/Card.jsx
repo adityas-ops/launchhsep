@@ -3,7 +3,7 @@ import React from 'react'
 function Card({item}) {
   return (
     <>
-        <div className=" w-[340px] mb-[80px] rounded-[20px]  h-[400px] border border-[#ffffff80]  bg-card-gradient ">
+        <div className=" w-[340px] md:mb-[80px] mb-[30px] rounded-[20px]  h-[400px] border border-[#ffffff80]  bg-card-gradient ">
               <div className=" w-full flex justify-center mt-[2.25rem]">
               {
                 item.img2 && <img

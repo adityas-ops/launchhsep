@@ -57,7 +57,7 @@ function portfolio() {
   return (
     <>
       <Hero2 />
-      <div className="w-full h-full bg-[#7A43EA] pt-[156px] pb-[76px]">
+      <div className="w-full h-full bg-[#7A43EA] md:pt-[156px] pt-[50px] md:pb-[76px] pb-[20px]">
         <div className=" max-w-[1200px] mx-auto grid md:grid-cols-3 grid-cols-1 items-center justify-center">
           {data.map((item, index) => {
             return (
@@ -68,33 +68,20 @@ function portfolio() {
           })}
         </div>
       </div>
-      <div className="md:py-[150px] py-[75px]">
+      <div className="md:py-[150px] py-[55px]">
         <div className=" w-full h-full flex flex-col md:flex-row">
           <div className="md:w-[40%] w-full flex justify-center">
-            <div className=" w-[400px] h-[400px] relative">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="400"
-                height="400"
-                className=" absolute top-0 bottom-0 left-0 right-0"
-                viewBox="0 0 400 400"
-                fill="none"
-              >
-                <path
-                  d="M390 0H10C4.47715 0 0 4.47714 0 9.99999V390C0 395.523 4.47714 400 9.99999 400H390C395.523 400 400 395.523 400 390V10C400 4.47715 395.523 0 390 0Z"
-                  fill="#7000FF"
-                />
-              </svg>
-              <div className=" w-full h-full flex flex-col items-center justify-center absolute">
+            <div className=" md:w-[400px] w-[300px] h-[300px] md:h-[400px] rounded-[20px] relative bg-[#7000FF]">
+            <div className=" w-full h-full flex flex-col items-center justify-center absolute">
                 <div className=" font-HeadLand text-[128px] text-white leading-[1]">5th</div>
                 <div className=" font-Inter text-[28px] font-[600] mt-4 text-[#ffffffbf]">November, 2023</div>
               </div>
             </div>
           </div>
-          <div className="w-[70%] flex flex-col  justify-center text-center">
-            <h3 className=" font-HeadLand w-[80%] text-[3rem] text-[#7000FF]">Teen Startups Demo Day</h3>
-           <div className=" w-full justify-center mt-8">
-           <p className=" text-[#333342] font-Inter text-[18px] leading-[2] w-[80%]">
+          <div className="md:w-[70%] w-full  flex flex-col px-4  justify-center text-center">
+            <h3 className=" font-HeadLand md:w-[80%] w-full mt-8 md:mt-0 md:text-[3rem] text-[1.75rem] text-[#7000FF]">Teen Startups Demo Day</h3>
+           <div className=" w-full justify-center md:mt-8 mt-2">
+           <p className=" text-[#333342] font-Inter md:text-[18px] text-[14px] leading-[2] w-full md:w-[80%]">
             LaunchHS hosts live Demo Days thrice throughout the year. Demo Days
 offer the opportunity to hear directly from our teen founders about the
 innovative companies they have been building throughout our programs
